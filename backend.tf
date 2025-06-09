@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    endpoint                    = "it-mil-1.linodeobjects.com"
+    endpoint                    = "https://it-mil-1.linodeobjects.com"
     bucket                      = "tf-state"
     key                         = "terraform.tfstate"
     region                      = "eu-south-1"
