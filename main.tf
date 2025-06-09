@@ -12,7 +12,7 @@ provider "linode" {
 }
 
 
-resource "linode_lke_cluster" "Cluster-2" {
+resource "linode_lke_cluster" "lke-cluster" {
     label       = "my-cluster"
     k8s_version = "1.32"
     region      = "it-mil"
