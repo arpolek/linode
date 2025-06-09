@@ -11,6 +11,7 @@ provider "linode" {
   token = var.linode_token
 }
 
+backend "s3" {}
 
 resource "linode_lke_cluster" "lke-cluster" {
     label       = "my-cluster"
