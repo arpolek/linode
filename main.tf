@@ -12,9 +12,9 @@ provider "linode" {
 }
 
 resource "linode_lke_cluster" "lke-cluster" {
-    label       = "my-cluster"
+    label       = "dupa123"
     k8s_version = "1.32"
-    region      = "it-mil"
+    region      = var.region
     tags        = ["dev"]
 
     pool {
